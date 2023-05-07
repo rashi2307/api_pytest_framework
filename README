@@ -1,0 +1,43 @@
+# API Testing with Pytest
+
+This project demonstrates how to perform API testing using the Pytest framework in Python. It includes sample test cases to validate various API endpoints, such as creating, updating, and deleting tasks.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.x
+- Pytest
+- Requests
+
+
+### Installation
+
+1. Clone the repository:
+
+    git clone https://github.com/your_username/your_project.git
+
+
+2. Install the required dependencies:
+
+    pip install -r requirements.txt
+
+
+3. Update the `base_url` variable in the Conftest.py files to point to your API endpoint.
+
+## Running the Tests
+
+To run the tests, use the following command:
+
+    pytest
+
+
+By default, pytest will discover and execute all the test functions marked with the `@pytest.mark.api` marker.
+
+You can also run specific sets of tests using markers. For example, to run only the API tests, use the following command:
+
+    pytest -m api
+
+Each test case is documented with a description, steps, and assertions made. Refer to the individual test files for detailed information.
+
+
